@@ -1,0 +1,29 @@
+{
+  "name": "react-express-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for a full-stack React/Express app.",
+  "repository": {
+    "url": "https://github.com/nhuesmann/react-express-boilerplate",
+    "type": "git"
+  },
+  "author": "Nathan Huesmann",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "lint": "eslint .",
+    "lintfix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "nodemon": "^1.17.1",
+    "prettier": "^1.11.1"
+  }
+}

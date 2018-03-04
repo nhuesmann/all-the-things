@@ -1,0 +1,10 @@
+.link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+
+  &Active,
+  &:hover {
+    color: orange;
+  }
+}
