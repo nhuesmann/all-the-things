@@ -1,16 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { render } from 'react-dom';
 
+import routes from './routes';
+import Root from './containers/Root';
+import configureStore from './store/configureStore';
+import rootSaga from './sagas';
+import initialState from './store/initialState';
 import './index.scss';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
-const app = (
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-);
+// import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(app, document.getElementById('root'));
-registerServiceWorker();
+const store = configureStore(initialState);
+store.runSaga(rootSaga);
+
+render(<Root store={store} routes={routes} />, document.getElementById('root'));
+
+// registerServiceWorker();

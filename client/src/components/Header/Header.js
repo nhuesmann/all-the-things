@@ -1,9 +1,7 @@
 import React from 'react';
 
-import NavLinkStandard from '../../components/NavLinkStandard/NavLinkStandard';
-
+import NavLinkStandard from '../NavLinkStandard/NavLinkStandard';
 import logo from '../../logo.svg';
-
 import styles from './Header.scss';
 
 const Header = () => (
@@ -12,7 +10,9 @@ const Header = () => (
       <ul>
         <li>
           <NavLinkStandard exact path="/" label="Home" />
-          <NavLinkStandard path="/test" label="Test" />
+          <NavLinkStandard path="/notfound" label="NotFound" />
+          <NavLinkStandard path="/cat" label="Cat" />
+          <NavLinkStandard path="/dog" label="Dog" />
         </li>
       </ul>
     </nav>

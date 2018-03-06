@@ -28,6 +28,8 @@
     ],
     "function-paren-newline": ["error", "consistent"],
     "no-mixed-operators": ["error", { "groups": [["*", "/"]] }],
+    "object-curly-newline": ["warn"],
+    "space-before-function-paren": ["error", "never"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".js"] }],
     "prettier/prettier": [
       "error",
